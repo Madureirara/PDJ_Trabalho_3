@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy_behavior : MonoBehaviour
 {
-    public itemData data;
+    public ItemData data;
     [SerializeField]private int health;
     [SerializeField] private float speed;
     [SerializeField] private GameObject target;
