@@ -6,7 +6,7 @@ public class itemData : ScriptableObject
 {   
     public int health= 50;
     public float speed;
-    public Transform target;  
+    public GameObject target;  
     
     public void CathItem(GameObject obj)
     {
