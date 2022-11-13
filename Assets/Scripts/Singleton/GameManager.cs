@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private static GameManager instance;
+    public int health=2;
+    public static GameManager instance;
     void Awake()
     {
         if (instance==null)
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
+
     public GameManager getInstance()
     {
         return instance;
