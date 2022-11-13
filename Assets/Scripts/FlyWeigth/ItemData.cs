@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class ItemData : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+[CreateAssetMenu(fileName ="New item", menuName ="Objeto/Detalhe",order =1)]
+public class itemData : ScriptableObject
+{   
+    public int health= 50;
+    public float speed;
+    public Transform target;  
+    
+    public void CathItem(GameObject obj)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log(obj.name);
     }
 }
