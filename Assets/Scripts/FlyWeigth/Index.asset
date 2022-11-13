@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Index
   m_EditorClassIdentifier: 
   health: 50
-  speed: 0
-  target: {fileID: 0}
+  speed: 10

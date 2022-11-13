@@ -5,9 +5,7 @@ using UnityEngine;
 public class itemData : ScriptableObject
 {   
     public int health= 50;
-    public float speed;
-    public GameObject target;  
-    
+    public float speed= 10;    
     public void CathItem(GameObject obj)
     {
         Debug.Log(obj.name);
