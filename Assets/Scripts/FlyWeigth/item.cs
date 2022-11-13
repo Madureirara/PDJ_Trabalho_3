@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    public itemData data;
+    public ItemData data;
     public int health;
     void Start()
     {

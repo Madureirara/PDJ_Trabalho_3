@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public itemData data;
+    public ItemData data;
     public int health;
     public CharacterController cc;
     public float speed;
@@ -30,7 +30,9 @@ public class Player : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray,out hit))
         {
-            this.transform.rotation = Quaternion.LookRotation(hit.point);
+            Vector3 lookPos = hit.point - transform.position;
+            lookPos.y = 0.0f;
+            this.transform.rotation = Quaternion.LookRotation(lookPos);
         }
     }
 }
