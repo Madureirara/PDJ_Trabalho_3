@@ -5,15 +5,15 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public ItemData data;
-    public int health;
     public CharacterController cc;
     public float speed;
     public float yVelocity = -9.81f;
 
-    void Awake()
+    void Start()
     {
-        health = data.health;
+        GameManager.instance.SetHealth(data.health);
         speed = data.speed;
+
     }
     private void Update()
     {
